@@ -323,7 +323,7 @@ class Router {
         reactRoute.load().then( (componentClass) => {
             this._onRouteLoadComplete(reactRoute,componentClass)
         }).catch((e)=>{
-            this._onRouteLoadError(reactRoute);
+            this._onRouteLoadError(e,reactRoute);
         });
     }
 
@@ -362,7 +362,7 @@ class Router {
             this._onRouteLoadgeComplete(componentClass)
         })
     }
-    _onRouteLoadError(route){
+    _onRouteLoadError(e,route){
         ExceptionHandler.newException(e,"در هنگام لود کامپوننت مشکلی پیش آمده است");
         if(!this.loadComponentTryCount){
             this.loadComponentTryCount = 1;
