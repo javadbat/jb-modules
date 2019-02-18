@@ -1,0 +1,39 @@
+{
+  "name": "jb-modules",
+  "description": "pure js modules to help you work with js easy",
+  "author": {
+		"name": "mohammad javad bathaei",
+		"email": "javadbat@gmail.com"
+	},
+  "keywords": [
+    "jb",
+    "jb-modules",
+    "http",
+    "request",
+    "fetch",
+    "exception handler",
+    "jalali",
+    "shamcy",
+    "persian_culture"
+  ],
+  "version": "0.0.1",
+  "bugs": "https://github.com/javadbat/jb-modules/issues",
+  "license": "MIT",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js",
+    "Culture/",
+    "DateTimeModule/",
+    "ExceptionHandler/",
+    "FetchHandler/",
+    "RequestModule/"
+  ],
+  "main": "index.js",
+  "repository": {
+		"type": "git",
+		"url": "git@github.com:javadbat/jb-modules.git"
+	},
+  "dependencies": {
+  }
+}
