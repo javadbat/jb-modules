@@ -1,4 +1,4 @@
-import ExceptionHandler from 'jb-modules/ExceptionHandler/ExceptionHandler'
+import ExceptionHandler from '../../ExceptionHandler/dist/ExceptionHandler$Build_Type_Prefix.min'
 class RequestData {
 
     config = {

@@ -75,6 +75,7 @@ var fetchResponseHandlerInstance =  function fetchResponseHandler(request) {
                     if(response.status == 502){
                       return mainReject({errorMessage:'خطای 502  ، سرور یا در حال به روز رسانی است یا دچار اشکال شده است'});
                     }
+                    debugger;
                     return response.json().then((e) => {
                         mainReject(e);
                     });

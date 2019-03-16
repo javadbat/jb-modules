@@ -5,7 +5,13 @@ export function fetchErrorHandler(data) {
         //if we are not in react panel and show message is invalid (show message is defined in bidopin panel master class)
         var showMessage = function(message){
             //TODO: use exception handler here
-            alert(message);
+            if(window){
+                alert(message);
+            }else{
+                //if execute envirement is nodejs not browser
+                console.log(message);
+            }
+            
         }
     }
     if(data.errorMessage){
